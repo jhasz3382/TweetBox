@@ -1,0 +1,11 @@
+<?php
+
+$db = mysql_connect("localhost","root","root");
+
+if (!$db) {
+    die('Could not connect: ' . mysql_error());
+}
+echo 'Connected successfully';
+mysql_close($db);
+
+?>
